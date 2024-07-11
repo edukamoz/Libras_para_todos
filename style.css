@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --cor-primaria: #3152B7;
+    --cor-de-fundo: #ADD8E6;
+    --cor-rodape: #A7A7A7;
+    --cor-label-formulario: #3B3B3B;
+    --font-body: 18px;
+    --font-titulos: 30px;
+    --font-secundaria: 16px;
+    --font-rodape: 14px;
+}
+
+html {
+    display: flex;
+    justify-content: center;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    width: 428px;
+}
+
+img {
+    width: 428px;
+}
+
+textarea {
+    resize: none;
+}
+
+#titulo-chamativo {
+    font-size: 30px;
+    color: var(--cor-primaria);
+}
+
+span {
+    color: var(--cor-primaria);
+    font-weight: 700;
+}
+
+h1 {
+    font-size: var(--font-titulos);
+    font-weight: 800;
+    text-align: center;
+}
+
+h4 {
+    font-weight: 700;
+}
+
+p {
+    font-size: var(--font-body);
+    font-weight: 400;
+}
+
+.card p {
+    font-size: var(--font-secundaria);
+}
+
+button {
+    width: 80%;
+    padding: 16px;
+    background-color: var(--cor-primaria);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+#nome-lucelia {
+    font-weight: 600;
+    font-style: italic;
+}
+
+section#inicio {
+    gap: 25px;
+}
+
+section {
+    margin-bottom: 50px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#servicos, #contato {
+    background-color: var(--cor-de-fundo);
+}
+
+hr {
+    margin-top: -20px;
+    height: 4px;
+    width: 100%;
+    background-image: linear-gradient(to right, #add8e600, #2ABCC8, #add8e600);
+    border: none;
+}
+
+#linha_chamativa {
+    background-image: linear-gradient(to right, #add8e600, #ADD8E6, #add8e600);
+}
+
+/* ---------------------- Sobre ---------------------- */
+
+#descricao_sobre {
+    background-color: var(--cor-primaria);
+    color: white;
+    padding: 12px;
+    border-radius: 20px;
+    text-align: center;
+    margin-top: -65px;
+}
+
+.redes-sociais {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin: 25px 0;
+}
+
+.redes-sociais a img {
+    height: 60px;
+    width: 60px;
+}
+
+/* ---------------------- Contato ---------------------- */
+
+#formulario {
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+#contato button {
+    margin: 25px 0;
+}
+
+.campo>label {
+    display: block;
+    font-size: var(--font-secundaria);
+    color: var(--cor-label-formulario);
+    font-weight: 400;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid var(--cor-label-formulario);
+}
+
+textarea {
+    height: 200px;
+}
