@@ -17,19 +17,10 @@
     --font-rodape: 14px;
 }
 
-html {
-    display: flex;
-    justify-content: center;
-}
-
 body {
     font-family: "Open Sans", sans-serif;
-    width: 428px;
+    scroll-behavior: smooth;
 }
-
-/* img {
-    width: 428px;
-} */
 
 textarea {
     resize: none;
@@ -80,7 +71,6 @@ p {
     justify-content:center;
     align-items: center;  
     row-gap: 16px; 
-    
 }
 
 .card p {
@@ -118,26 +108,34 @@ a {
 
 section#inicio {
     gap: 25px;
+    margin-bottom: 25px;
+    padding: 5px;
+}
+
+section#sobre {
+    margin-top: 25px;
 }
 
 section {
-    margin-bottom: 50px;
     display: flex;
     align-items: center;
     flex-direction: column;
+}
+
+#inicio img, #sobre>img {
+    width: 80vw;
 }
 
 #servicos {
     padding-bottom: 25px;
 }
 
-
 #servicos, #contato {
     background-color: var(--cor-de-fundo);
 }
 
 hr {
-    margin-top: -20px;
+    /* margin-top: -20px; */
     height: 4px;
     width: 100%;
     background-image: linear-gradient(to right, #add8e600, #2ABCC8, #add8e600);
@@ -156,13 +154,13 @@ hr {
     padding: 12px;
     border-radius: 20px;
     text-align: center;
-    margin-top: -65px;
+    margin: -65px 5px 0 5px;
 }
 
 .redes-sociais {
     display: flex;
     width: 100%;
-    justify-content: space-between;
+    justify-content: space-around;
     margin: 25px 0;
 }
 
@@ -205,6 +203,7 @@ textarea {
 footer{
     background: rgba(155,155,155,0.53);
     padding-bottom: 25px;
+    margin-bottom: 80px;
 }
 
 .rodape{
@@ -256,4 +255,32 @@ ul{
 
 footer p{
     text-align: center;
+}
+
+/* ---------------------- Header ---------------------- */
+
+header {
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    padding: 10px;
+    background-color: var(--cor-de-fundo);
+}
+
+nav ul li a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+nav ul li a span {
+    color: black;
+    font-weight: 400;
 }
