@@ -189,10 +189,15 @@ hr {
 
 /* ---------------------- Contato ---------------------- */
 
-#formulario {
+form {
     width: 85%;
+    text-align: center;
+}
+
+#formulario {
     display: flex;
     flex-direction: column;
+    text-align: left;
     gap: 25px;
 }
 
@@ -200,11 +205,23 @@ hr {
     margin: 25px 0;
 }
 
-.campo>label {
-    display: block;
+#contato button:disabled {
+    background-color: #555;
+    cursor: not-allowed;
+}
+
+label {
     font-size: var(--font-secundaria);
     color: var(--cor-label-formulario);
     font-weight: 400;
+}
+
+.success {
+    color: greenyellow;
+}
+
+.error {
+    color: tomato;
 }
 
 input,

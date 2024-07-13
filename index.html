@@ -82,34 +82,34 @@
                     <div>
                         <h4>Janela de vídeos</h4>
                         <p>Espaço dedicado em um vídeo para o intérprete traduzir o conteúdo falado</p>
-                        <button>Saiba mais <img src="/img/icone-seta.svg" alt="ícone de seta para a direita" width="24px"
-                                height="24px"></button>
+                        <button>Saiba mais <img src="/img/icone-seta.svg" alt="ícone de seta para a direita"
+                                width="24px" height="24px"></button>
                     </div>
-    
+
                 </div>
-    
+
                 <div class="card">
-    
+
                     <img src="/img/img-card-2.svg" alt="">
                     <div>
                         <h4>Intérprete presencial</h4>
                         <p>Interpretação presencial para eventos, reuniões e atendimentos</p>
-                        <button>Saiba mais <img src="/img/icone-seta.svg" alt="ícone de seta para a direita" width="24px"
-                                height="24px"></button>
+                        <button>Saiba mais <img src="/img/icone-seta.svg" alt="ícone de seta para a direita"
+                                width="24px" height="24px"></button>
                     </div>
-    
+
                 </div>
-    
+
                 <div class="card">
-    
+
                     <img src="/img/img-card-3.svg" alt="">
                     <div>
                         <h4>Intérprete online</h4>
                         <p>Interpretação online para eventos, reuniões e atendimentos</p>
-                        <button>Saiba mais <img src="/img/icone-seta.svg" alt="ícone de seta para a direita" width="24px"
-                                height="24px"></button>
+                        <button>Saiba mais <img src="/img/icone-seta.svg" alt="ícone de seta para a direita"
+                                width="24px" height="24px"></button>
                     </div>
-    
+
                 </div>
             </div>
 
@@ -154,31 +154,35 @@
 
             <h1>Contato</h1>
 
-            <div id="formulario">
+            <form action="https://formsubmit.co/ajax/emaiiiiiiiiiiiiil" method="POST" data-form>
 
-                <div class="campo">
-                    <label for="nome">Nome</label>
-                    <input type="text" id="nome" placeholder="Digite seu nome">
+                <div id="formulario">
+
+                    <div class="campo">
+                        <label for="nome">Nome *</label>
+                        <input type="text" name="nome" id="nome" placeholder="Digite seu nome" required="required">
+                    </div>
+
+                    <div class="campo">
+                        <label for="email">Email *</label>
+                        <input type="email" name="email" id="email" placeholder="Digite seu email" required>
+                    </div>
+
+                    <div class="campo">
+                        <label for="telefone">Telefone</label>
+                        <input type="" name="telefone" id="telefone" placeholder="(99) 99999-9999">
+                    </div>
+
+                    <div class="campo">
+                        <label for="mensagem">Mensagem *</label>
+                        <textarea name="mensagem" id="mensagem" required></textarea>
+                    </div>
+
                 </div>
 
-                <div class="campo">
-                    <label for="email">Email</label>
-                    <input type="text" id="email" placeholder="Digite seu email">
-                </div>
+                <button type="submit" data-button>Enviar</button>
 
-                <div class="campo">
-                    <label for="telefone">Telefone</label>
-                    <input type="number" id="telefone" placeholder="(99) 99999-9999">
-                </div>
-
-                <div class="campo">
-                    <label for="mensagem">Mensagem</label>
-                    <textarea name="mensagem" id="mensagem"></textarea>
-                </div>
-
-            </div>
-
-            <button>Enviar</button>
+            </form>
 
         </section>
 
@@ -217,6 +221,8 @@
         <p>&#169 2024 - Todos os direitos reservados</p>
 
     </footer>
+
+    <script src="script.js"></script>
 
 </body>
 
