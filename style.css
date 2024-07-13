@@ -141,6 +141,7 @@ section {
 #inicio img,
 #sobre>img {
     width: 80vw;
+    max-width: 428px;
 }
 
 #servicos {
@@ -153,7 +154,6 @@ section {
 }
 
 hr {
-    /* margin-top: -20px; */
     height: 4px;
     width: 100%;
     background-image: linear-gradient(to right, #add8e600, #2ABCC8, #add8e600);
